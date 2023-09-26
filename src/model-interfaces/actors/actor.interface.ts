@@ -106,4 +106,16 @@ export interface APActor extends APObject {
      * {@link https://www.w3.org/TR/activitypub/#actors Docs}
      */
     endpoints?: EndpointsField;
+
+	/**
+	 * The public key of this actor, used to sign activities.
+	 */
+	publicKey?: {
+		/** The ID of this public key. Typically `https://example.com/users/username#main-key`. */
+		id: string;
+		/** The owner of this key. Typically matches actor ID. */
+		owner: string;
+		/** The RSA public key. */
+		publicKeyPem: string;
+	}
 }
