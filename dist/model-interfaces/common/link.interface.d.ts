@@ -1,4 +1,5 @@
-import { HeightField, HreflangField, HrefField, MediaTypeField, NameMapField, NameField, PreviewField, RelField, TypeField, WidthField } from '../../fields';
+import { HeightField, HrefField, HreflangField, MediaTypeField, NameField, NameMapField, PreviewField, RelField, TypeField, WidthField } from "../../fields";
+import { APObject } from "./object.interface";
 export interface APLink {
     /**
      * Identifies the {@link https://www.w3.org/TR/activitystreams-vocabulary/#dfn-object Object}
@@ -74,3 +75,4 @@ export interface APLink {
      */
     preview?: PreviewField;
 }
+export declare const ObjectIsLink: (object: APObject) => object is APLink;

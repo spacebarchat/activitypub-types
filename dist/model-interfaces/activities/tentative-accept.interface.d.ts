@@ -1,2 +1,5 @@
-import { APAccept } from './accept.interface';
-export type APTentativeAccept = APAccept;
+import { APActivity } from "./activity.interface";
+export type APTentativeAccept = APActivity & {
+    type: "TentativeAccept";
+};
+export declare const ActivityIsTentativeAccept: (activity: APActivity) => activity is APTentativeAccept;

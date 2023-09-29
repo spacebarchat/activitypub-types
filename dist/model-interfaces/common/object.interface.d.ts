@@ -1,4 +1,4 @@
-import { UrlField, IconField, ImageField, AttachmentField, AudienceField, InReplyToField, LocationField, PreviewField, ToField, BtoField, CcField, BccField, AttributedToField, TagField, GeneratorField, IdField, TypeField, ContentField, ContentMapField, MediaTypeField, NameField, NameMapField, EndTimeField, StartTimeField, PublishedField, RepliesField, SummaryField, SummaryMapField, UpdatedField, DurationField, SourceField, LikesField, SharesField, ContextField } from '../../fields';
+import { AttachmentField, AttributedToField, AudienceField, BccField, BtoField, CcField, ContentField, ContentMapField, ContextField, DurationField, EndTimeField, GeneratorField, IconField, IdField, ImageField, InReplyToField, LikesField, LocationField, MediaTypeField, NameField, NameMapField, PreviewField, PublishedField, RepliesField, SharesField, SourceField, StartTimeField, SummaryField, SummaryMapField, TagField, ToField, TypeField, UpdatedField, UrlField } from "../../fields";
 export interface APObject {
     /**
      * JSON-LD uses the special @context property to define the processing context.
@@ -6,7 +6,7 @@ export interface APObject {
      *
      * {@link https://www.w3.org/TR/activitystreams-core/#jsonld Docs}
      */
-    '@context'?: ContextField | ContextField[];
+    "@context"?: ContextField | ContextField[];
     /**
      * Provides the globally unique identifier for
      * an {@link https://www.w3.org/TR/activitystreams-vocabulary/#dfn-object Object}

@@ -1,5 +1,5 @@
-import { APCollection } from './collection.interface';
-import { CollectionPageNextField, CollectionPagePartOfField, CollectionPagePrevField } from '../../fields';
+import { APCollection } from "./collection.interface";
+import { CollectionPageNextField, CollectionPagePartOfField, CollectionPagePrevField } from "../../fields";
 export interface APCollectionPage extends APCollection {
     /**
      * Identifies the Collection to which a CollectionPage objects items belong.

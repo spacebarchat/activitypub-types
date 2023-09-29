@@ -1,5 +1,5 @@
-import { APObject } from '../common/object.interface';
-import { ActorField, InstrumentField, ObjectField, OriginField, ResultField, TargetField } from '../../fields';
+import { APObject } from "../common/object.interface";
+import { ActorField, InstrumentField, ObjectField, OriginField, ResultField, TargetField } from "../../fields";
 export interface APActivity extends APObject {
     /**
      * Describes one or more entities that either performed or are expected to perform the activity.

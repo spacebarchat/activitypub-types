@@ -1,6 +1,7 @@
-import { DeletedField, FormerTypeField } from '../../fields';
-import { APObject } from './object.interface';
+import { DeletedField, FormerTypeField } from "../../fields";
+import { APObject } from "./object.interface";
 export interface APTombstone extends APObject {
+    type: "Tombstone";
     /**
      * On a Tombstone object, the formerType property identifies
      * the type of the object that was deleted.
@@ -18,3 +19,4 @@ export interface APTombstone extends APObject {
      */
     deleted?: DeletedField;
 }
+export declare const ObjectIsTombstone: (object: APObject) => object is APTombstone;

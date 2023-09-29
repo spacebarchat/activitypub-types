@@ -1,5 +1,5 @@
-import { APObject } from '../common/object.interface';
-import { CollectionCurrentField, CollectionFirstField, CollectionItemsField, CollectionLastField, TotalItemsField } from '../../fields';
+import { APObject } from "../common/object.interface";
+import { CollectionCurrentField, CollectionFirstField, CollectionItemsField, CollectionLastField, TotalItemsField } from "../../fields";
 export interface APCollection extends APObject {
     /**
      * A non-negative integer specifying the total number of objects contained by

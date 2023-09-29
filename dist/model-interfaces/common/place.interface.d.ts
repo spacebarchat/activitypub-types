@@ -1,6 +1,7 @@
-import { APObject } from './object.interface';
-import { AccuracyField, AltitudeField, LatitudeField, LongitudeField, RadiusField, UnitsField } from '../../fields';
+import { AccuracyField, AltitudeField, LatitudeField, LongitudeField, RadiusField, UnitsField } from "../../fields";
+import { APObject } from "./object.interface";
 export interface APPlace extends APObject {
+    type: "Place";
     /**
      * Indicates the accuracy of position coordinates on a Place objects.
      * Expressed in properties of percentage. e.g. "94.0" means "94.0% accurate".
@@ -43,3 +44,4 @@ export interface APPlace extends APObject {
      */
     units?: UnitsField;
 }
+export declare const ObjectIsPlace: (object: APObject) => object is APPlace;

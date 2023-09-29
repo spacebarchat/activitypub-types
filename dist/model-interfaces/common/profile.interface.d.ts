@@ -1,6 +1,7 @@
-import { DescribesField } from '../../fields';
-import { APObject } from './object.interface';
+import { DescribesField } from "../../fields";
+import { APObject } from "./object.interface";
 export interface APProfile extends APObject {
+    type: "Profile";
     /**
      * On a Profile object, the describes property identifies
      * the object described by the Profile.
@@ -9,3 +10,4 @@ export interface APProfile extends APObject {
      */
     describes?: DescribesField;
 }
+export declare const ObjectIsProfile: (object: APObject) => object is APProfile;

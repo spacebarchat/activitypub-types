@@ -1,5 +1,5 @@
-import { APObject } from '../common/object.interface';
-import { FollowersField, FollowingField, InboxField, LikedField, OutboxField, PreferredUsernameMapField, PreferredUsernameField, StreamsField, EndpointsField } from '../../fields';
+import { APObject } from "../common/object.interface";
+import { FollowersField, FollowingField, InboxField, LikedField, OutboxField, PreferredUsernameMapField, PreferredUsernameField, StreamsField, EndpointsField } from "../../fields";
 export interface APActor extends APObject {
     inbox: InboxField;
     /**

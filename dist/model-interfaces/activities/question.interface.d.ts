@@ -1,6 +1,7 @@
-import { AnyOfField, ClosedField, OneOfField } from '../../fields';
-import { APIntransitiveActivity } from './intransitive-activity.interface';
+import { AnyOfField, ClosedField, OneOfField } from "../../fields";
+import { APIntransitiveActivity } from "./intransitive-activity.interface";
 export interface APQuestion extends APIntransitiveActivity {
+    type: "Question";
     /**
      * Identifies an exclusive option for a Question.
      * Use of oneOf implies that the Question can have only a single answer.
@@ -24,3 +25,4 @@ export interface APQuestion extends APIntransitiveActivity {
      */
     closed?: ClosedField;
 }
+export declare const ActivityIsQuestion: (activity: APIntransitiveActivity) => activity is APQuestion;

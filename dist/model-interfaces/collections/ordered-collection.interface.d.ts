@@ -1,5 +1,5 @@
-import { OrderedCollectionCurrentField, OrderedCollectionFirstField, OrderedCollectionItemsField, OrderedCollectionLastField, TotalItemsField } from '../../fields';
-import { APObject } from '../common/object.interface';
+import { OrderedCollectionCurrentField, OrderedCollectionFirstField, OrderedCollectionItemsField, OrderedCollectionLastField, TotalItemsField } from "../../fields";
+import { APObject } from "../common/object.interface";
 export interface APOrderedCollection extends APObject {
     /**
      * A non-negative integer specifying the total number of objects contained by

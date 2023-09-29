@@ -1,4 +1,4 @@
-import { APCollection, APOrderedCollection, APObject, APArticle, APAudio, APDocument, APEvent, APImage, APNote, APPage, APPlace, APProfile, APRelationship, APTombstone, APVideo, APLink, APCollectionPage, APOrderedCollectionPage, APMention } from '../model-interfaces';
+import { APArticle, APAudio, APCollection, APCollectionPage, APDocument, APEvent, APImage, APLink, APMention, APNote, APObject, APOrderedCollection, APOrderedCollectionPage, APPage, APPlace, APProfile, APRelationship, APTombstone, APVideo } from "../model-interfaces";
 export type AnyCollection = APCollection | APOrderedCollection;
 export type AnyAPObject = APObject | APArticle | APAudio | APDocument | APEvent | APImage | APNote | APPage | APPlace | APProfile | APRelationship | APTombstone | APVideo | AnyCollection;
 export type DateTime = string | Date;
@@ -51,7 +51,7 @@ export type AltitudeField = number;
 export type LatitudeField = number;
 export type LongitudeField = number;
 export type RadiusField = number;
-export type UnitsField = 'cm' | 'feet' | 'inches' | 'km' | 'm' | 'miles' | string;
+export type UnitsField = "cm" | "feet" | "inches" | "km" | "m" | "miles" | string;
 export type ClosedField = string | AnyAPObject | APLink | DateTime | boolean;
 export type FormerTypeField = string;
 export type DeletedField = DateTime;

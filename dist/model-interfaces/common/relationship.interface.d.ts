@@ -1,6 +1,7 @@
-import { SubjectField, ObjectField, RelationshipField } from '../../fields';
-import { APObject } from './object.interface';
+import { ObjectField, RelationshipField, SubjectField } from "../../fields";
+import { APObject } from "./object.interface";
 export interface APRelationship extends APObject {
+    type: "Relationship";
     /**
      * On a Relationship object, the subject property identifies one of the connected individuals.
      * For instance, for a Relationship object describing "John is related to Sally",
@@ -23,3 +24,4 @@ export interface APRelationship extends APObject {
      */
     relationship?: RelationshipField;
 }
+export declare const ObjectIsRelationship: (object: APObject) => object is APRelationship;

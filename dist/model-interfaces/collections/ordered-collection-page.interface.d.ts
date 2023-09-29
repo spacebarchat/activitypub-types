@@ -1,5 +1,5 @@
-import { OrderedCollectionPageNextField, OrderedCollectionPagePartOfField, OrderedCollectionPagePrevField, StartIndexField } from '../../fields';
-import { APOrderedCollection } from './ordered-collection.interface';
+import { OrderedCollectionPageNextField, OrderedCollectionPagePartOfField, OrderedCollectionPagePrevField, StartIndexField } from "../../fields";
+import { APOrderedCollection } from "./ordered-collection.interface";
 export interface APOrderedCollectionPage extends APOrderedCollection {
     /**
      * Identifies the OrderedCollection to which a OrderedCollectionPage objects items belong.
