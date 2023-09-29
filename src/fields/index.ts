@@ -1,27 +1,41 @@
 import {
-    APCollection,
-    APOrderedCollection,
-    APObject,
-    APArticle,
-    APAudio,
-    APDocument,
-    APEvent,
-    APImage,
-    APNote,
-    APPage,
-    APPlace,
-    APProfile,
-    APRelationship,
-    APTombstone,
-    APVideo,
-    APLink,
-    APCollectionPage,
-    APOrderedCollectionPage,
-    APMention,
-} from '../model-interfaces';
+	APArticle,
+	APAudio,
+	APCollection,
+	APCollectionPage,
+	APDocument,
+	APEvent,
+	APImage,
+	APLink,
+	APMention,
+	APNote,
+	APObject,
+	APOrderedCollection,
+	APOrderedCollectionPage,
+	APPage,
+	APPlace,
+	APProfile,
+	APRelationship,
+	APTombstone,
+	APVideo,
+} from "../model-interfaces";
 
 export type AnyCollection = APCollection | APOrderedCollection;
-export type AnyAPObject = APObject | APArticle | APAudio | APDocument | APEvent | APImage | APNote | APPage | APPlace | APProfile | APRelationship | APTombstone | APVideo | AnyCollection;
+export type AnyAPObject =
+	| APObject
+	| APArticle
+	| APAudio
+	| APDocument
+	| APEvent
+	| APImage
+	| APNote
+	| APPage
+	| APPlace
+	| APProfile
+	| APRelationship
+	| APTombstone
+	| APVideo
+	| AnyCollection;
 
 export type DateTime = string | Date;
 export type LanguageTag = string;
@@ -74,7 +88,14 @@ export type AltitudeField = number;
 export type LatitudeField = number;
 export type LongitudeField = number;
 export type RadiusField = number;
-export type UnitsField = 'cm' | 'feet' | 'inches' | 'km' | 'm' | 'miles' | string;
+export type UnitsField =
+	| "cm"
+	| "feet"
+	| "inches"
+	| "km"
+	| "m"
+	| "miles"
+	| string;
 export type ClosedField = string | AnyAPObject | APLink | DateTime | boolean;
 export type FormerTypeField = string;
 export type DeletedField = DateTime;
@@ -92,22 +113,51 @@ export type CollectionItemsField = string | APCollectionPage | APLink;
 export type CollectionPagePartOfField = string | APCollection | APLink;
 export type CollectionPageNextField = string | APCollection | APLink;
 export type CollectionPagePrevField = string | APCollection | APLink;
-export type OrderedCollectionCurrentField = string | APOrderedCollectionPage | APLink;
-export type OrderedCollectionFirstField = string | APOrderedCollectionPage | APLink;
-export type OrderedCollectionLastField = string | APOrderedCollectionPage | APLink;
-export type OrderedCollectionItemsField = string | APOrderedCollectionPage | APLink;
-export type OrderedCollectionPagePartOfField = string | APOrderedCollection | APLink;
-export type OrderedCollectionPageNextField = string | APOrderedCollection | APLink;
-export type OrderedCollectionPagePrevField = string | APOrderedCollection | APLink;
+export type OrderedCollectionCurrentField =
+	| string
+	| APOrderedCollectionPage
+	| APLink;
+export type OrderedCollectionFirstField =
+	| string
+	| APOrderedCollectionPage
+	| APLink;
+export type OrderedCollectionLastField =
+	| string
+	| APOrderedCollectionPage
+	| APLink;
+export type OrderedCollectionItemsField =
+	| string
+	| APOrderedCollectionPage
+	| APLink;
+export type OrderedCollectionPagePartOfField =
+	| string
+	| APOrderedCollection
+	| APLink;
+export type OrderedCollectionPageNextField =
+	| string
+	| APOrderedCollection
+	| APLink;
+export type OrderedCollectionPagePrevField =
+	| string
+	| APOrderedCollection
+	| APLink;
 export type StartIndexField = number;
 export type SourceField = {
-    content: ContentField,
-    mediaType?: MediaType,
-}
+	content: ContentField;
+	mediaType?: MediaType;
+};
 export type InboxField = string | APOrderedCollection | APLink;
 export type OutboxField = string | APOrderedCollection | APLink;
-export type FollowingField = string | APCollection | APOrderedCollection | APLink;
-export type FollowersField = string | APCollection | APOrderedCollection | APLink;
+export type FollowingField =
+	| string
+	| APCollection
+	| APOrderedCollection
+	| APLink;
+export type FollowersField =
+	| string
+	| APCollection
+	| APOrderedCollection
+	| APLink;
 export type LikedField = string | APCollection | APOrderedCollection | APLink;
 export type LikesField = string | APCollection | APOrderedCollection | APLink;
 export type SharesField = string | APCollection | APOrderedCollection | APLink;
@@ -121,10 +171,10 @@ export type ProvideClientKeyField = string;
 export type SignClientKeyField = string;
 export type SharedInboxField = string;
 export type EndpointsField = {
-    proxyUrl?: ProxyUrlField;
-    oauthAuthorizationEndpoint?: OauthAuthorizationEndpointField;
-    oauthTokenEndpoint?: OauthTokenEndpointField;
-    provideClientKey?: ProvideClientKeyField;
-    signClientKey?: SignClientKeyField;
-    sharedInbox?: SharedInboxField;
-}
+	proxyUrl?: ProxyUrlField;
+	oauthAuthorizationEndpoint?: OauthAuthorizationEndpointField;
+	oauthTokenEndpoint?: OauthTokenEndpointField;
+	provideClientKey?: ProvideClientKeyField;
+	signClientKey?: SignClientKeyField;
+	sharedInbox?: SharedInboxField;
+};

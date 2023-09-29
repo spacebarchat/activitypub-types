@@ -1,3 +1,3 @@
-import { APActivity } from './activity.interface';
+import { APActivity } from "./activity.interface";
 
-export type APIntransitiveActivity = Omit<APActivity, 'object'>
+export type APIntransitiveActivity = Omit<APActivity, "object">;
