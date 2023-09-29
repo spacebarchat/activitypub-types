@@ -1,7 +1,8 @@
+import { APObject } from "../common/object.interface";
 import { APActor } from "./actor.interface";
 
 export type APService = APActor & { type: "Service" };
 
-export const ActorIsService = (actor: APActor): actor is APService => {
+export const ObjectIsService = (actor: APObject): actor is APService => {
 	return actor.type == "Service";
 };

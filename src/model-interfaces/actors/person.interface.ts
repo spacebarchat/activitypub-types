@@ -1,7 +1,8 @@
+import { APObject } from "../common/object.interface";
 import { APActor } from "./actor.interface";
 
 export type APPerson = APActor & { type: "Person" };
 
-export const ActorIsPerson = (actor: APActor): actor is APPerson => {
+export const ObjectIsPerson = (actor: APObject): actor is APPerson => {
 	return actor.type == "Person";
 };
