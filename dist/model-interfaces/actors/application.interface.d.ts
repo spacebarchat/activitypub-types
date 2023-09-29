@@ -1,5 +1,6 @@
+import { APObject } from "../common/object.interface";
 import { APActor } from "./actor.interface";
 export type APApplication = APActor & {
     type: "Application";
 };
-export declare const ActorIsApplication: (actor: APActor) => actor is APApplication;
+export declare const ObjectIsApplication: (actor: APObject) => actor is APApplication;

@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.ActorIsPerson = void 0;
-const ActorIsPerson = (actor) => {
+exports.ObjectIsPerson = void 0;
+const ObjectIsPerson = (actor) => {
     return actor.type == "Person";
 };
-exports.ActorIsPerson = ActorIsPerson;
+exports.ObjectIsPerson = ObjectIsPerson;

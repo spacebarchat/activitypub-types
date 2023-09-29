@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.ActorIsApplication = void 0;
-const ActorIsApplication = (actor) => {
+exports.ObjectIsApplication = void 0;
+const ObjectIsApplication = (actor) => {
     return actor.type == "Application";
 };
-exports.ActorIsApplication = ActorIsApplication;
+exports.ObjectIsApplication = ObjectIsApplication;

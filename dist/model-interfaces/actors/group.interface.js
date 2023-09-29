@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.ActorIsGroup = void 0;
-const ActorIsGroup = (actor) => {
+exports.ObjectIsGroup = void 0;
+const ObjectIsGroup = (actor) => {
     return actor.type == "Group";
 };
-exports.ActorIsGroup = ActorIsGroup;
+exports.ObjectIsGroup = ObjectIsGroup;
