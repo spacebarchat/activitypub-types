@@ -1,15 +1,15 @@
-import { APObject } from "../common/object.interface";
 import {
+	EndpointsField,
 	FollowersField,
 	FollowingField,
 	InboxField,
 	LikedField,
 	OutboxField,
-	PreferredUsernameMapField,
 	PreferredUsernameField,
+	PreferredUsernameMapField,
 	StreamsField,
-	EndpointsField,
 } from "../../fields";
+import { APObject } from "../common/object.interface";
 
 export interface APActor extends APObject {
 	/*
@@ -117,4 +117,11 @@ export interface APActor extends APObject {
 		/** The RSA public key. */
 		publicKeyPem: string;
 	};
+
+	/**
+	 * FEP-2c59: Discovery of a Webfinger address from an ActivityPub actor
+	 * https://codeberg.org/fediverse/fep/src/branch/main/fep/2c59/fep-2c59.md
+	 * @context: https://purl.archive.org/socialweb/webfinger
+	 */
+	webfinger?: string;
 }
