@@ -92,4 +92,9 @@ export interface APActor extends APObject {
      * @context: https://purl.archive.org/socialweb/webfinger
      */
     webfinger?: string;
+    /**
+     * Whether or not this actor will manually approve followers.
+     * @context https://www.w3.org/ns/activitystreams#manuallyApprovesFollowers
+     */
+    manuallyApprovesFollowers: boolean;
 }
